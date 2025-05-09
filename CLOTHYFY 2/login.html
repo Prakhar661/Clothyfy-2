@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <title>The Clothify | LogIn Page |</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!--Custom css-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
+</head>
+
+<body>
+    <!-- Login Script -->
+    <script src="assets/js/login.js"></script>
+
+    <!-- This is our nav bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <input type="checkbox" name="" id="checkbox">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+             <div class="logo">
+                <!-- <img src="https://i.postimg.cc/TP6JjSTt/logo.webp" alt="brand logo"> -->
+                <img src="./assets/image/logo.png" alt="brand logo">
+            </div>
+
+
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <!-- Theme toggle inside navbar -->
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class='bx bxs-moon'></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Login card start here-->
+
+    <div class="container"
+        style="padding-top: 1.3rem; padding-bottom: 1.3rem; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        <div class="wrapper">
+            <div id="auth" class="authentication">
+                <div class="wrapper">
+                    <div id="login" class="card">
+                        <div class="wrapper">
+                            <div class="animation form login">
+                                <div class="wrapper">
+                                    <h3 class="title" style="text-align: left;">
+                                        Sign In
+                                    </h3>
+                                    <form>
+                                        <div class="form-group input">
+                                            <label>
+                                                Email Id:
+                                            </label>
+                                            <input type="email" name="email" id="user-email-login" class="user-email">
+                                        </div>
+                                        <div class="form-group input">
+                                            <label>
+                                                Password:
+                                            </label>
+                                            <input type="password" name="password" id="user-password-login"
+                                                class="user-password">
+                                        </div>
+                                        <button type="submit" class="button color-1 login" id="button-login">
+                                            Login
+                                        </button>
+                                    </form>
+                                    <a href="#" id="button-register-switch">
+                                        Create An Account
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="animation note login">
+                                <div class="wrapper">
+                                    <h1 style="overflow: hidden;" class="head1">
+                                        Welcome To The Clothyfy Store.
+                                    </h1>
+                                    <p>
+                                        Don't have an account?
+                                    </p>
+                                    <p>
+                                        Sign up with us today!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="register" class="card">
+                        <div class="wrapper">
+                            <div class="animation form register">
+                                <div class="wrapper">
+                                    <h3 class="head1">
+                                        Create Account
+                                    </h3>
+                                    <form>
+                                        <div class="form-group input">
+                                            <label>
+                                                Email Id:
+                                            </label>
+                                            <input type="email" name="email" id="user-email-register"
+                                                class="user-email">
+                                        </div>
+                                        <div class="form-group input">
+                                            <label>
+                                                Password:
+                                            </label>
+                                            <input type="password" name="password" id="user-password-register"
+                                                class="user-password">
+                                        </div>
+                                        <div class="form-group input">
+                                            <label>
+                                                Confirm Password:
+                                            </label>
+                                            <input type="password" name="password" id="user-password-register-confirm"
+                                                class="user-password-confirm">
+                                        </div>
+                                        <button type="submit" class="button color-1 login" id="button-register">
+                                            Create
+                                        </button>
+                                    </form>
+                                    <a href="#" id="button-login-switch">
+                                        Already Have An Account?
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="animation note register">
+                                <div class="wrapper">
+                                    <h1 style="overflow: hidden;" class="head1">
+                                        Let's Get Started:
+                                    </h1>
+                                    <p>
+                                        No matter how you feel, get up, dress up and show up.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer start here-->
+    <footer style="width: 100%; overflow-x: hidden;">
+        <div class="footer-container">
+            <div class="content_1">
+                <h1>ClothyFy Fashion</h1>
+                <p>The customer is at the heart of our<br>unique business model, which includes<br>design.</p>
+                <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards" style="max-width: 100%;">
+            </div>
+            <div class="content_2">
+                <h4>SHOPPING</h4>
+                <a href="index.html#sellers">Clothing Store</a>
+                <a href="index.html#sellers">Trending Shoes</a>
+                <a href="index.html#sellers">Accessories</a>
+                <a href="index.html#sellers">Sale</a>
+            </div>
+            <div class="content_3">
+                <h4>Information</h4>
+                <a href="./contact.html">Contact Us</a>
+                <a href="https://payment-method-sb.netlify.app/" target="_blank">Payment Method</a>
+                <a href="https://delivery-status-sb.netlify.app/" target="_blank">Delivery</a>
+                <a href="https://codepen.io/sandeshbodake/full/Jexxrv" target="_blank">Return and Exchange</a>
+            </div>
+
+             <div class="footer-col">
+    <h4 >Address</h4>
+    <ul >
+    <li><a href="#" id="address">Sigra,<br>
+    Varanasi,UP - 221010<br>
+    <a href="tel:8528321952" id="address"> <i class="fa fa-phone" aria-hidden="true"> Click To Call </i></a>
+    <a href="mailto:py8249@gmail.com" id="address"><i class="fa fa-envelope"> Send Email</i></a>
+    </a></li>
+    </ul>
+    </div>
+
+     <div class="footer-col">
+    <h4>follow us</h4>
+    <div class="social-links">
+    <a href="https://www.facebook.com/prakhar.yadav.9066"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/prakharyadav4855/"><i class="fab fa-instagram"></i></a>
+     <!-- <a href="#"><i class="fab fa-twitter"></i></a> 
+    <a href="#"><i class="fab fa-linkedin"></i></a> -->
+    </div>
+    </div>
+    </div>
+
+            <div class="content_4">
+                <h4>NEWLETTER</h4>
+                <p>Be the first to know about new<br>arrivals, look books, sales & promos!</p>
+                <div class="f-mail">
+                    <input type="email" placeholder="Your Email">
+                    <i class='bx bx-envelope'></i>
+                </div>
+
+
+
+                <hr>
+            </div>
+        </div>
+        <div class="f-design">
+            <div class="f-design-txt container">
+                ClothyFy Website<br>Presentation by PRAKHAR YADAV , SUMIT DUBEY , ASHISH.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts for theme toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Check if jQuery is available
+            if (typeof jQuery === 'undefined') {
+                console.error('jQuery not loaded! Using vanilla JS for theme toggle');
+                setupVanillaThemeToggle();
+            } else {
+                console.log('jQuery is loaded, using jQuery for theme toggle');
+            }
+
+            // Vanilla JS theme toggle implementation
+            function setupVanillaThemeToggle() {
+                var themeToggle = document.getElementById('themeToggle');
+                if (!themeToggle) {
+                    console.error('Theme toggle button not found!');
+                    return;
+                }
+
+                // Get current theme
+                var html = document.documentElement;
+                var currentTheme = html.getAttribute('data-theme') || 'light';
+
+                // Update icon based on current theme
+                updateIcon(currentTheme);
+
+                // Add click event listener
+                themeToggle.addEventListener('click', function () {
+                    console.log('Theme toggle clicked manually');
+
+                    // Toggle theme
+                    var newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                    html.setAttribute('data-theme', newTheme);
+                    localStorage.setItem('theme', newTheme);
+                    currentTheme = newTheme;
+
+                    // Update icon
+                    updateIcon(newTheme);
+
+                    console.log('Theme switched to:', newTheme);
+                });
+
+                // Function to update icon
+                function updateIcon(theme) {
+                    var icon = themeToggle.querySelector('i');
+                    if (theme === 'dark') {
+                        icon.className = 'bx bxs-sun';
+                    } else {
+                        icon.className = 'bx bxs-moon';
+                    }
+                }
+            }
+
+            // Apply saved theme on page load
+            var savedTheme = localStorage.getItem('theme') ||
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        });
+    </script>
+
+    <!-- Required scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

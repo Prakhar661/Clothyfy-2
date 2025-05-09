@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - The Clothify</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/checkout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nice-select2@2.1.0/dist/css/nice-select2.css">
+    <link rel="stylesheet" href="assets/css/index1.css" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <style>
+        /* Ensure the phone flag dropdown is visible and styled properly */
+        .iti {
+            width: 100%;
+        }
+        .iti__flag-container {
+            display: block !important;
+        }
+        .iti--separate-dial-code .iti__selected-flag {
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 0 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Top text -->
+        <div class="top-txt">
+            <div class="head container">
+                <p>Free shipping on All orders. No minimum Purchase</p>
+                <div>
+                    <a href="#">SignIn/Register</a>
+                    <a href="#">My Account</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="Clothify Logo">
+                </div>
+                <ul class="menu-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#collection">Collections</a></li>
+                    <li><a href="index.html#sellers">Sellers</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contacts">Contacts</a></li>
+                    <li class="theme-toggle" title="Toggle theme">
+                        <i class='bx bx-moon'></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Multi step form --> 
+        <section class="multi_step_form">  
+            <form id="msform"> 
+                <!-- Title -->
+                <div class="tittle">
+                    <h2>Order Code 7652</h2>
+                    <p>In order to use this service, you have to complete this verification process</p>
+                </div>
+                
+                <!-- progressbar -->
+                <ul id="progressbar">
+                    <li class="active">Verify Phone</li>  
+                    <li>Upload Documents</li> 
+                    <li>Security Questions</li>
+                </ul>
+                
+                <!-- fieldsets -->
+                <fieldset>
+                    <h3>Setup your phone</h3>
+                    <h6>We will send you a SMS. Input the code to verify.</h6> 
+                    <div class="form-row"> 
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" placeholder="+91">
+                        </div>
+                        <div class="form-group col-md-6"> 
+                            <input type="text" class="form-control" placeholder="9123456780">
+                        </div> 
+                    </div> 
+                    <div class="done_text"> 
+                        <a href="#" class="don_icon"><i class="ion-android-done"></i></a> 
+                        <h6>A secret code is sent to your phone. <br>Please enter it here.</h6> 
+                    </div>  
+                    <div class="code_group"> 
+                        <input type="text" class="form-control" placeholder="0">
+                        <input type="text" class="form-control" placeholder="0">
+                        <input type="text" class="form-control" placeholder="0">
+                        <input type="text" class="form-control" placeholder="0">
+                    </div>  
+                    <button type="button" class="action-button previous">Back</button>
+                    <button type="button" class="next action-button">Confirm Order</button>  
+                </fieldset>
+                
+                <fieldset>
+                    <h3>Verify Your Identity</h3>
+                    <h6>Please upload any of these documents to verify your Identity.</h6>
+                    <div class="passport">
+                        <h4>Govt. ID card <br>PassPort <br>Driving License.</h4> 
+                        <a href="#" class="don_icon"><i class="ion-android-done"></i></a> 
+                    </div>
+                    <div class="input-group"> 
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="upload">
+                            <label class="custom-file-label" for="upload"><i class="ion-android-cloud-outline"></i>Choose file</label>
+                        </div>
+                    </div>
+                    <ul class="file_added">
+                        <li>File Added:</li>
+                        <li><a href="#"><i class="ion-paperclip"></i>national_id_card.png</a></li>
+                        <li><a href="#"><i class="ion-paperclip"></i>national_id_card_back.png</a></li>
+                    </ul>
+                    <button type="button" class="action-button previous">Back</button>
+                    <button type="button" class="next action-button">Continue</button>  
+                </fieldset>  
+                
+                <fieldset>
+                    <h3>Create Security Questions</h3>
+                    <h6>Please update your account with security questions</h6> 
+                    <div class="form-group"> 
+                        <select class="product_select">
+                            <option data-display="1. Choose A Question">1. Choose A Question</option> 
+                            <option>2. Choose A Question</option>
+                            <option>3. Choose A Question</option> 
+                        </select>
+                    </div> 
+                    <div class="form-group fg_2"> 
+                        <input type="text" class="form-control" placeholder="Answer here:">
+                    </div> 
+                    <div class="form-group"> 
+                        <select class="product_select">
+                            <option data-display="1. Choose A Question">1. Choose A Question</option> 
+                            <option>2. Choose A Question</option>
+                            <option>3. Choose A Question</option> 
+                        </select>
+                    </div> 
+                    <div class="form-group fg_3"> 
+                        <input type="text" class="form-control" placeholder="Answer here:">
+                    </div> 
+                    <button type="button" class="action-button previous">Back</button> 
+                    <a href="#" class="action-button submit">Finish</a> 
+                </fieldset>  
+            </form>  
+        </section>
+        <!-- End Multi step form -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container container">
+            <div class="content_1">
+                <h1>The Clothify</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+            </div>
+            <div class="content_2">
+                <h4>Shop</h4>
+                <a href="index.html#collection">Collections</a>
+                <a href="index.html#sellers">Trending</a>
+                <a href="index.html#sellers">Accessories</a>
+                <a href="index.html#sellers">Sale</a>
+            </div>
+            <div class="content_3">
+                <h4>Information</h4>
+                <a href="index.html#contacts">Contact Us</a>
+                <a href="#">Payment Method</a>
+                <a href="#">Delivery</a>
+                <a href="#">Return and Exchange</a>
+            </div>
+            <div class="content_4">
+                <h4>Newsletter</h4>
+                <p>Be the first to know about new arrivals, sales & promos!</p>
+                <div class="f-mail">
+                    <input type="email" placeholder="Your Email">
+                    <i class='bx bx-envelope'></i>
+                </div>
+            </div>
+        </div>
+        <div class="f-design">
+            <div class="f-design-txt container">
+                <p>© 2024 The Clothify. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nice-select2@2.1.0/dist/js/nice-select2.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/checkout.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Initialize checkout page functions
+            phoneNoselect();
+            verificationForm();
+            niceSelect();
+            
+            // Initialize theme
+            const themeButton = document.getElementById('theme-button')
+            const darkTheme = 'dark-theme'
+            const iconTheme = 'uil-sun'
+            const selectedTheme = localStorage.getItem('selected-theme')
+            const selectedIcon = localStorage.getItem('selected-icon')
+            const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+            const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+            
+            if (selectedTheme) {
+                document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+                themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+            }
+            
+            themeButton.addEventListener('click', () => {
+                document.body.classList.toggle(darkTheme)
+                themeButton.classList.toggle(iconTheme)
+                localStorage.setItem('selected-theme', getCurrentTheme())
+                localStorage.setItem('selected-icon', getCurrentIcon())
+            })
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,23 @@
+{
+  "name": "clothyfy",
+  "version": "1.0.0",
+  "description": "ClothyFy E-commerce Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "open index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "e-commerce",
+    "clothing",
+    "fashion",
+    "web"
+  ],
+  "author": "ClothyFy Team",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  }
+} 
